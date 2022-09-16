@@ -22,55 +22,55 @@ export const Footer = () => {
       }}
 
     >
-      <Grid container
-        sm={12} md={6}
+      <Grid
+        container
+        /* sm={12} */ md={6}
         sx={{
           display: "flex",
           justifyContent: "center"
         }}
       >
         <Grid
-          containner
-          sm={12}
+          xs={12}
           sx={{
             display: "flex",
-            justifyContent: "space-around"
+            flexDirection: { xs: "column", sm: "column", md: "row" },
+            justifyContent: "space-around",
           }}
-          xs={12}
         >
-          <Grid sx={{ textAlign: "left" }}>
+          <Grid item sx={{ textAlign: "left" }}>
 
-            <Typography variant="h6" sx={{ p: 0.5 }}>Contato</Typography>
-            <Divider sx={{ mb: 1 }} />
+            <Typography variant="h6" sx={{ p: 0.5, fontWeight: 'bold' }}>Contato</Typography>
+            <Divider sx={{ mb: 1, borderBottomWidth: 2 }} />
 
             <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
               <Box sx={{ p: 0.5, pl: 0, display: "inline-flex", justifyContent: "center", alignItems: "center" }}>
                 <MyLocationIcon />
-                <Typography variant="body2">Estrada dos Remédios, 1558 </Typography>
+                <Typography variant="body2">&nbsp;Estrada dos Remédios, 1558 </Typography>
               </Box>
 
               <Box sx={{ p: 0.5, pl: 0, display: "inline-flex", justifyContent: "center", alignItems: "center" }}>
                 <LocalPhoneIcon />
-                <Typography variant="body2">(81) 3428.2538</Typography>
+                <Typography variant="body2">&nbsp;(81) 3428.2538</Typography>
               </Box>
 
               <Box sx={{ p: 0.5, pl: 0, display: "inline-flex", justifyContent: "center", alignItems: "center" }}>
                 <MailOutlineIcon />
-                <Typography variant="body2">contato@assobecer.org.br</Typography>
+                <Typography variant="body2">&nbsp;contato@assobecer.org.br</Typography>
               </Box>
 
               <Box sx={{ p: 0.5, pl: 0, display: "inline-flex", justifyContent: "center", alignItems: "center" }}>
                 <MailOutlineIcon />
-                <Typography variant="body2">assobecer.ong@hotmail.com </Typography>
+                <Typography variant="body2">&nbsp;assobecer.ong@hotmail.com </Typography>
               </Box>
             </Box>
 
           </Grid>
 
-          <Grid item sx={{ textAlign: "left" }}>
-            <Typography variant="h6" sx={{ p: 0.5 }}>Redes Sociais</Typography>
-            <Divider sx={{ mb: 1 }} />
-            <Box sx={{ width: "100%", display: "flex", justifyContent: "space-evenly" }}>
+          <Grid item sx={{ textAlign: "left", mt: { xs: 2, sm: 2, md: 0 } }}>
+            <Typography variant="h6" sx={{ p: 0.5, fontWeight: 'bold' }}>Redes Sociais</Typography>
+            <Divider sx={{ mb: 1, borderBottomWidth: 2 }} />
+            <Box sx={{ width: "100%", display: "flex", justifyContent: { xs: "left", sm: "left", md: "center" } }}>
               <InstagramIcon sx={{ p: 0.5 }} fontSize="large" />
               <FacebookIcon sx={{ p: 0.5 }} fontSize="large" />
             </Box>
@@ -84,8 +84,9 @@ export const Footer = () => {
             fullWidth
             sx={{
               mt: 2,
-              bgcolor: "primary.contrastText",
-              color: "primary.main",
+              bgcolor: "primary.dark",
+              color: "secondary.contrastText",
+              boxShadow: 8,
             }}
           >
             Faca sua doação

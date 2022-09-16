@@ -7,12 +7,30 @@ import SettingsIcon from '@mui/icons-material/Settings'
 export const Desktop = ({ ...props }) => {
     return (
         <>
+            <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                    mr: 2,
+                    display: { xs: 'none', md: 'flex' },
+                    fontFamily: 'monospace',
+                    fontWeight: 700,
+                    letterSpacing: '.3rem',
+                    color: 'inherit',
+                    textDecoration: 'none',
+                }}
+                title="Botão Home"
+            >
+                ASSOBECER
+            </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {props.pages.map((page) => (
                     <Button
                         key={page}
                         onClick={props.handleCloseNavMenu}
-                        sx={{ my: 2, color: 'white', display: 'block' }}
+                        sx={{ my: 2, color: 'common.black', display: 'block' }}
                         title={page}
                     >
                         {page}
@@ -23,7 +41,7 @@ export const Desktop = ({ ...props }) => {
             <Box sx={{ flexGrow: 0 }}>
                 <Tooltip title="Configurações">
                     <IconButton onClick={props.handleOpenUserMenu} sx={{ p: 0 }}>
-                        <SettingsIcon sx={{ color: "white" }} />
+                        <SettingsIcon sx={{ color: "common.black" }} />
                     </IconButton>
                 </Tooltip>
                 <Menu
