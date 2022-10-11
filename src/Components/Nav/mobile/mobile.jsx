@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 //MUI
 import { Box, IconButton, Typography, Menu, MenuItem } from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu'
@@ -6,7 +8,6 @@ export const Mobile = ({ ...props }) => {
 
     return (
         <>
-            
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                 <IconButton
@@ -38,19 +39,22 @@ export const Mobile = ({ ...props }) => {
                     }}
                 >
                     {props.pages.map((page) => (
-                        <MenuItem key={page} onClick={props.handleCloseNavMenu}>
-                            <Typography textAlign="center">{page}</Typography>
-                        </MenuItem>
+                        <Link key={page} to={`/${page}`} style={{ textDecoration: "none", color: "black" }}>
+                            <MenuItem onClick={props.handleCloseNavMenu}>
+                                <Typography textAlign="center">{page}</Typography>
+                            </MenuItem>
+                        </Link>
                     ))}
                 </Menu>
             </Box>
+
+
             <Typography
                 variant="h5"
                 noWrap
-                component="a"
-                href=""
                 sx={{
-                    mr: 2,
+                    mr: 1,
+                    ml: 1,
                     display: { xs: 'flex', md: 'none' },
                     flexGrow: 1,
                     fontFamily: 'monospace',
@@ -60,8 +64,11 @@ export const Mobile = ({ ...props }) => {
                     textDecoration: 'none',
                 }}
             >
-                ASSOBECER
+                <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
+                    ASSOBECER
+                </Link>
             </Typography>
+
         </>
     )
 }

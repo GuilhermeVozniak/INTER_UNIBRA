@@ -1,40 +1,42 @@
-
+import { Link } from "react-router-dom"
 
 //MUI
-import { Box, IconButton, Typography, Menu, Avatar, Button, Tooltip, MenuItem } from "@mui/material"
+import { Box, IconButton, Typography, Menu, Button, Tooltip, MenuItem } from "@mui/material"
 import SettingsIcon from '@mui/icons-material/Settings'
 
 export const Desktop = ({ ...props }) => {
     return (
         <>
-            <Typography
-                variant="h6"
-                noWrap
-                component="a"
-                href="/"
-                sx={{
-                    mr: 2,
-                    display: { xs: 'none', md: 'flex' },
-                    fontFamily: 'monospace',
-                    fontWeight: 700,
-                    letterSpacing: '.3rem',
-                    color: 'inherit',
-                    textDecoration: 'none',
-                }}
-                title="Botão Home"
-            >
-                ASSOBECER
-            </Typography>
+            <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
+                <Typography
+                    variant="h6"
+                    noWrap
+                    sx={{
+                        mr: 2,
+                        display: { xs: 'none', md: 'flex' },
+                        fontFamily: 'monospace',
+                        fontWeight: 700,
+                        letterSpacing: '.3rem',
+                        color: 'inherit',
+                        textDecoration: 'none',
+                    }}
+                    title="Botão Home"
+                >
+
+                    ASSOBECER
+                </Typography>
+            </Link>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {props.pages.map((page) => (
-                    <Button
-                        key={page}
-                        onClick={props.handleCloseNavMenu}
-                        sx={{ my: 2, color: 'common.black', display: 'block' }}
-                        title={page}
-                    >
-                        {page}
-                    </Button>
+                    <Link key={page} to={`/${page}`} style={{ textDecoration: "none", color: "black" }}>
+                        <Button
+                            onClick={props.handleCloseNavMenu}
+                            sx={{ my: 2, color: 'common.black', display: 'block' }}
+                            title={page}
+                        >
+                            {page}
+                        </Button>
+                    </Link>
                 ))}
             </Box>
 

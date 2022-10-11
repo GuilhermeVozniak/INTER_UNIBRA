@@ -7,7 +7,7 @@ import { AppBar, Toolbar, Container } from "@mui/material"
 import { Mobile } from './mobile/mobile'
 import { Desktop } from './desktop/desktop'
 
-const pages = ['Institucional', 'Estrutura', 'Eventos', 'Como Ajudar', 'Prestação de Contas', 'Contato']
+const pages = ['Institucional', 'Estrutura', 'Eventos', 'Como Ajudar', 'Contato']
 const settings = ['Modo Noturno', 'Inversão de Cores', 'Tamanho dos itens']
 
 export const NavegationBar = () => {

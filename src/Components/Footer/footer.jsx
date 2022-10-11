@@ -24,13 +24,14 @@ export const Footer = () => {
     >
       <Grid
         container
-        /* sm={12} */ md={6}
         sx={{
           display: "flex",
-          justifyContent: "center"
+          justifyContent: "center",
+          width: { md: "50%" }
         }}
       >
         <Grid
+          item
           xs={12}
           sx={{
             display: "flex",
