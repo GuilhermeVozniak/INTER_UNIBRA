@@ -3,7 +3,7 @@
 import { Box, Typography, useMediaQuery } from "@mui/material"
 
 //Img
-import imagem from '../Assets/img.jpg'
+import imagem from '../../Assets/img.jpg'
 
 
 export const Home = () => {

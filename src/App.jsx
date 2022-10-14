@@ -9,6 +9,8 @@ import {
 import { Footer } from "./Components/Footer/footer"
 import { NavegationBar } from "./Components/Nav/nav"
 import { Home } from "./Components/Home/Home"
+import { Institucional } from "./Components/Institucional/Institucional"
+import { Estrutura } from "./Components/Estrutura/Estrutura"
 
 
 //Theme
@@ -28,7 +30,7 @@ function App() {
         <Box sx={{
           backgroundColor: "secondary.main",
           width: { xs: "80%", sm: "80%", md: "80%" },
-          p: 3,
+          p: 4,
           margin: "0 auto",
           mt: 4,
           mb: 4,
@@ -40,7 +42,11 @@ function App() {
           <Routes>
 
             <Route path="/" element={<Home />} />
-            <Route path="/Institucional" element={<div>Institucional</div>} />
+            <Route path="/institucional" element={<Institucional />} />
+            <Route path="/estrutura" element={<Estrutura />} />
+            <Route path="/eventos" element={<Institucional />} />
+            <Route path="/ajuda" element={<Institucional />} />
+            <Route path="/contato" element={<Institucional />} />
             <Route path="/*" element={<div>404</div>} />
 
           </Routes>
