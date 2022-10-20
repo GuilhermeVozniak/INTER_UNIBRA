@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     position: relative;
     .imgText{
         position: absolute;
-        top: 85%;
+        top: 88%;
     }
 }
 `

@@ -69,7 +69,12 @@ export const Estrutura = () => {
 								bgcolor: "primary.main",
 								color: "white",
 								borderRadius: 1,
-								textAlign: "center"
+								display: "flex",
+								justifyContent: "center",
+								alignItems:'center',
+								width: "85%",
+								minHeight: '2.5em',
+								textAlign:"center"
 							}}
 							className="imgText"
 						>

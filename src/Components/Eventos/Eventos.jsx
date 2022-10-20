@@ -60,7 +60,7 @@ export const Eventos = () => {
 			"Posse da nova Diretoria e Conselho Fiscal."],
 		[festaJunina,
 			"Festa Junina."],
-		[showBeneficente, 
+		[showBeneficente,
 			"Show Beneficente - Conde Só Brega"],
 		[torneioDomino1,
 			"Torneio de Dominó para Cegos."],
@@ -112,9 +112,9 @@ export const Eventos = () => {
 		<Wrapper>
 			<BreadCrumbs pages={["Eventos"]} />
 			<Box sx={{ mt: 4, mb: 4 }}>
-				<Typography variant={isSmallScreen ? "body2" : "body1"} sx={{ mt: 2, color: "secondary.contrastText", textAlign: "justify", textIndent: "30px" }}>
+				<Typography variant={"body1"} sx={{ mt: 2, color: "secondary.contrastText", textAlign: "justify", textIndent: "30px" }}>
 					Veja nossa galeria de fotos com imagens dos eventos realizados na nossa Associação.
-                </Typography>
+				</Typography>
 			</Box>
 			<Grid spacing={6} container sx={{ display: "flex", justifyContent: "space-evenly" }} >
 
@@ -138,7 +138,12 @@ export const Eventos = () => {
 								bgcolor: "primary.main",
 								color: "white",
 								borderRadius: 1,
-								textAlign: "center"
+								display: "flex",
+								justifyContent: "center",
+								alignItems:'center',
+								width: "85%",
+								minHeight: '2.5em',
+								textAlign:"center"
 							}}
 							className="imgText"
 						>

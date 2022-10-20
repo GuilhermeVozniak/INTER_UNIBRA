@@ -17,7 +17,7 @@ export const Home = () => {
 
 
             <Box sx={{ mt: 2 }}>
-                <Typography variant="h4" sx={{ mt: 2, mb: 2, color: "secondary.contrastText", textAlign: "center", color: "black" }}> Quem somos?</Typography>
+                <Typography variant="h4" sx={{ mt: 2, mb: 2, color: "secondary.contrastText", textAlign: "center" }}> Quem somos?</Typography>
                 <Typography
                     variant={"body1"}
                     sx={{ color: "black", textAlign: "justify", textIndent: "30px", fontWeight: "bold" }}
