@@ -17,25 +17,20 @@ export const Home = () => {
 
 
             <Box sx={{ mt: 2 }}>
+                <Typography variant="h4" sx={{ mt: 2, mb: 2, color: "secondary.contrastText", textAlign: "center", color: "black" }}> Quem somos?</Typography>
                 <Typography
-                    variant={isSmallScreen ? "body2" : "body1"}
-                    sx={{ color: "secondary.contrastText", textAlign: "justify", textIndent: "30px" }}
+                    variant={"body1"}
+                    sx={{ color: "black", textAlign: "justify", textIndent: "30px", fontWeight: "bold" }}
                 >
-                    Hoje com 93 anos de existência e muitas vitórias alcançadas, a associação já atendeu centenas de
-                    pessoas e atualmente presta em média 30 atendimentos por dia através do seu Serviço Social.
-                    A ASSOBECER recebe pessoas com deficiência visual do sexo masculino dos 18 aos 60 anos, como residentes,
-                    abrangendo seus atendimentos também ao sexo feminino, que tem sua característica como circulante.
-                    A associação é a única no Recife a funcionar com esse sistema de hospedagem, assistência, treinamento e
-                    capacitação profissionalizante.
+                    A ASSOBECER é uma instituição que dá suporte para deficientes visuais que vem até Recife em busca de treinamento profissional.
                 </Typography>
                 <Typography
-                    variant={isSmallScreen ? "body2" : "body1"}
-                    sx={{ color: "secondary.contrastText", textAlign: "justify", textIndent: "30px" }}
+                    variant={"body1"}
+                    sx={{ color: "black", textAlign: "justify", textIndent: "30px", fontWeight: "bold" }}
                 >
-                    A casa tem capacidade de abrigar 20 pessoas, oferecendo serviços de lavanderia,
-                    alimentação e inserção no mercado de trabalho, entre outras atribuições. São oferecidas em torno de, aproximadamente,
-                    130 refeições ao dia, podendo ser variável em dias de grandes eventos em nossa instituição.
+                    A associação conta também com cursos de braille e informática, além de promover laser para os residentes.
                 </Typography>
+
             </Box>
 
 

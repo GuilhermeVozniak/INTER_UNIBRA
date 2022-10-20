@@ -43,7 +43,7 @@ export const Desktop = ({ ...props }) => {
             <Box sx={{ flexGrow: 0 }}>
                 <Tooltip title="Configurações">
                     <IconButton onClick={props.handleOpenUserMenu} sx={{ p: 0 }}>
-                        <SettingsIcon sx={{ color: "common.black" }} />
+                        <SettingsIcon sx={{ color: "common.white" }} />
                     </IconButton>
                 </Tooltip>
                 <Menu

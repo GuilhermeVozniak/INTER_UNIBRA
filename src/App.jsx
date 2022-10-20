@@ -31,7 +31,7 @@ function App() {
         <Box sx={{
           backgroundColor: "secondary.main",
           width: { xs: "80%", sm: "80%", md: "80%" },
-          p: 4,
+          p: { xs: 3, sm: 3, md: 4 },
           margin: "0 auto",
           mt: 4,
           mb: 4,

@@ -64,7 +64,7 @@ export const Mobile = ({ ...props }) => {
                     textDecoration: 'none',
                 }}
             >
-                <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
+                <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
                     ASSOBECER
                 </Link>
             </Typography>
