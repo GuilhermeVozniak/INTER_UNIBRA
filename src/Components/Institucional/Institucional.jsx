@@ -23,41 +23,50 @@ export const Institucional = () => {
             <Box sx={{ mt: 4 }}>
                 <Typography variant={"h6"} sx={{ ml: 2, color: "secondary.contrastText" }}>NOSSA HISTÓRIA</Typography>
                 <Typography variant={isSmallScreen ? "body2" : "body1"} sx={{ mt: 2, color: "secondary.contrastText", textAlign: "justify", textIndent: "30px", fontWeight: "semibold" }}>
-                    A associação Beneficente dos Cegos do Recife, fundada no dia 12 de maio de 1928, por iniciativa do Sr. Manoel Vitoriano
-                    da Silva, com sede na Estrada dos Remédios – Nº 1558, no bairro de Afogados – Recife – PE, doravante adotando a sigla
-                    ASSOBECER, é uma associação civil de direito privado, com personalidade jurídica, sem fins lucrativos, sem discriminação
-                    de raça, cor, religião, origem e convicções filosóficas, de duração indeterminada, que tem por finalidade prestar atendimento
-                    a pessoas cegas e/ou com baixa visão, por ações efetivas nas áreas de educação, reabilitação, profissionalização e assistência social.
+                    A Associação Beneficente dos Cegos do Recife, fundada no dia 12 de maio de 1928, por iniciativa do Sr. Manoel Vitoriano da Silva,
+                    com sede na Estrada dos Remédios – Nº 1558, no bairro de Afogados – Recife – PE, doravante adotando a sigla ASSOBECER, é uma associação
+                    civil de direito privado, com personalidade jurídica, sem fins lucrativos, sem discriminação de raça, cor, religião, origem e convicções
+                    filosóficas, de duração indeterminada, que tem por finalidade prestar atendimento a pessoas cegas e/ou com baixa visão, por ações
+                    efetivas nas áreas de educação, reabilitação, profissionalização e assistência social.
                 </Typography>
             </Box>
 
             <Box sx={{ mt: 4 }}>
                 <Typography variant={"h6"} sx={{ ml: 2, color: "secondary.contrastText" }}>MISSÃO</Typography>
                 <Typography variant={isSmallScreen ? "body2" : "body1"} sx={{ mt: 2, color: "secondary.contrastText", textAlign: "justify", textIndent: "30px", fontWeight: "semibold" }}>
-                    Ajudar as pessoas cegas e/ou com baixa visão, cuidando e capacitando-as para serem incluídas à sociedade para que
-                    possam ter melhores perspectivas e qualidade de vida.
+                    Ajudar as pessoas cegas e/ou com baixa visão, cuidando e capacitando-as para serem incluídas à sociedade para que possam ter
+                    melhores perspectivas e qualidade de vida.
                 </Typography>
             </Box>
 
             <Box sx={{ mt: 4 }}>
                 <Typography variant={"h6"} sx={{ ml: 2, color: "secondary.contrastText" }}>VISÃO</Typography>
                 <Typography variant={isSmallScreen ? "body2" : "body1"} sx={{ mt: 2, color: "secondary.contrastText", textAlign: "justify", textIndent: "30px", fontWeight: "semibold" }}>
-                    Torna-se referência em ONG que presta atendimento de qualidade e solidário onde o foco são as pessoas que precisam de atenção e toda
-                    a assistência necessária para seguir. Todos os nosso esforços é para criar o melhor ambiente possível. Continuaremos neste caminho.
+                    Torna-se referência em ONG que presta atendimento de qualidade e solidário onde o foco são as pessoas que precisam de atenção
+                    e toda a assistência necessária para seguir. Todos os nosso esforços é para criar o melhor ambiente possível. Continuaremos neste caminho.
                 </Typography>
             </Box>
 
             <Box sx={{ mt: 4 }}>
                 <Typography variant={"h6"} sx={{ ml: 2, color: "secondary.contrastText" }}>VALORES</Typography>
                 <Typography variant={isSmallScreen ? "body2" : "body1"} sx={{ mt: 2, color: "secondary.contrastText", textAlign: "justify", textIndent: "30px", fontWeight: "semibold" }}>
-                    Bem estar de nossos colaboradores, parceiros e amigos. Confiança mútua, respeito às pessoas que precisam de ajuda. Esses são os
-                    ideais do nosso fundador e os nossos ideais também.
+                    Bem estar de nossos colaboradores, parceiros e amigos. Confiança mútua, respeito às pessoas que precisam de ajuda.
+                    Esses são os ideais do nosso fundador e os nossos ideais também.
+                </Typography>
+            </Box>
+
+            <Box sx={{ mt: 4 }}>
+                <Typography variant={"h6"} sx={{ ml: 2, color: "secondary.contrastText" }}>RECONHECIMENTOS</Typography>
+                <Typography variant={isSmallScreen ? "body2" : "body1"} sx={{ mt: 2, color: "secondary.contrastText", textAlign: "justify", textIndent: "30px", fontWeight: "semibold" }}>
+                    Registrada no Conselho Municipal de Assistência Social – CMAS
+                </Typography>
+                <Typography variant={isSmallScreen ? "body2" : "body1"} sx={{ mt: 2, color: "secondary.contrastText", textAlign: "justify", textIndent: "30px", fontWeight: "semibold" }}>
+                    Registrada no Ministério do Desenvolvimento Social e Combate à Fome - MDS
                 </Typography>
             </Box>
 
 
-
-            <Box sx={{ width: "100%", textAlign: "center" }}>
+            {/* <Box sx={{ width: "100%", textAlign: "center" }}>
                 <Typography
                     variant='h4'
                     sx={{
@@ -128,7 +137,7 @@ export const Institucional = () => {
 
 
 
-            </Box>
+            </Box> */}
 
 
         </Wrapper>

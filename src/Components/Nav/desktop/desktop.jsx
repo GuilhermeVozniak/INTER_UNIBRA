@@ -17,7 +17,7 @@ export const Desktop = ({ ...props }) => {
                         fontFamily: 'monospace',
                         fontWeight: 700,
                         letterSpacing: '.3rem',
-                        color: 'inherit',
+                        color: "common.white",
                         textDecoration: 'none',
                     }}
                     title="Botão Home"
@@ -31,7 +31,7 @@ export const Desktop = ({ ...props }) => {
                     <Link key={page} to={`/${page}`} style={{ textDecoration: "none", color: "black" }}>
                         <Button
                             onClick={props.handleCloseNavMenu}
-                            sx={{ my: 2, color: 'common.black', display: 'block' }}
+                            sx={{ my: 2, color: 'common.white', display: 'block' }}
                             title={page}
                         >
                             {page}

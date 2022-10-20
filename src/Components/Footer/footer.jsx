@@ -86,7 +86,7 @@ export const Footer = () => {
             sx={{
               mt: 2,
               bgcolor: "primary.dark",
-              color: "secondary.contrastText",
+              color: "common.white",
               boxShadow: 8,
             }}
           >

@@ -32,13 +32,13 @@ export const Estrutura = () => {
 		[recepcao,
 			"Entre, seja bem-vindo! A nossa instituição terá satisfação em lhe atender."],
 		[dormitorio,
-			"A Associação possui capacidade para acolher 20 pessoas em seu dormitório."],
+			"Nossos dormitórios tem capacidade para acolher até 20 pessoas por vez"],
 		[refeitorio,
-			"A Associação possui capacidade para servi proximadamente, 130 refeições ao dia."],
+			"O refeitório tem capacidade de proporcionar três refeiçoes diárias, totalizando 130 refeições"],
 		[salaInformatica,
-			"Aqui são realizadas as aulas do Curso de Informática com o auxílio da ferramenta DOSVOX(UFRJ)."],
+			"Aqui são realizadas as aulas do Curso Básico de Informática com o auxílio da ferramenta DOSVOX"],
 		[cursoBraile,
-			"Neste curso as pessoas cegas e/ou com baixa visão aprendem o Sistema Braille."],
+			"Neste curso os deficiêntes visuais aprendem o Sistema Braille, código universal que contribui para a inclusão dos mesmo e possibilta o acesso ao exercício da cidadania"],
 		[escritaCursiva,
 			"Curso que ensina as pessoas cegas e/ou com baixa visão a escreverem à mão."]
 	]
