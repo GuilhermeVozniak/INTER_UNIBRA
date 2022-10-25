@@ -12,6 +12,7 @@ import { Home } from "./Components/Home/Home"
 import { Institucional } from "./Components/Institucional/Institucional"
 import { Estrutura } from "./Components/Estrutura/Estrutura"
 import { Eventos } from "./Components/Eventos/Eventos"
+import { Ajuda } from "./Components/Ajuda/Ajuda"
 
 
 //Theme
@@ -46,7 +47,7 @@ function App() {
             <Route path="/institucional" element={<Institucional />} />
             <Route path="/estrutura" element={<Estrutura />} />
             <Route path="/eventos" element={<Eventos />} />
-            <Route path="/ajuda" element={<Institucional />} />
+            <Route path="/ajuda" element={<Ajuda />} />
             <Route path="/contato" element={<Institucional />} />
             <Route path="/*" element={<div>404</div>} />
 
