@@ -20,6 +20,16 @@ let theme = createTheme({
     dividerColor: {
         backgroundColor: 'white',
     },
+
+    components:{
+        MuiTextField:{
+            styleOverrides:{
+                root:{
+                    fontSize:"0.5em"
+                }
+            }
+        }
+    }
 })
 
 theme = responsiveFontSizes(theme)
