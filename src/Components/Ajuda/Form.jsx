@@ -2,42 +2,48 @@
 import { FormControl, Button, Grid, TextField } from '@mui/material'
 
 export const Form = () => {
+    const styleCenter = {
+        display: "flex",
+        justifyContent: "center",
+
+    }
+
     return (
         <>
-            <Grid 
-                spancing={6} gap={3} container 
-                sx={{ 
+            <Grid
+                spancing={6} gap={3} container
+                sx={{
                     display: "flex",
                     justifyContent: 'center'
                 }}
             >
-                <Grid item xs={12} sm={12} md={3}>
+                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
                     <FormControl>
                         <TextField id="name" label="Nome" variant="outlined" />
                     </FormControl>
                 </Grid>
-                <Grid item xs={12} sm={12} md={3}>
+                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
                     <FormControl>
                         <TextField id="email" label="E-mail" variant="outlined" />
                     </FormControl>
                 </Grid>
-                <Grid item xs={12} sm={12} md={3}>
+                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
                     <FormControl>
                         <TextField id="cpf" label="CPF ou CNPJ" variant="outlined" />
                     </FormControl>
                 </Grid>
-                <Grid item xs={12} sm={12} md={3}>
+                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
                     <FormControl>
                         <TextField id="address" label="Endereço" variant="outlined" />
                     </FormControl>
                 </Grid>
-                <Grid item xs={12} sm={12} md={3}>
+                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
                     <FormControl>
                         <TextField id="reference" label="Referência" variant="outlined" />
                     </FormControl>
                 </Grid>
             </Grid>
-            <Grid 
+            <Grid
                 sx={{
                     mt: 4,
                     gap: 3,
