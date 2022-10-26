@@ -48,13 +48,7 @@ export const Ajuda = () => {
             </Box>
 
             <Box sx={{ mt: 4 }}>
-                {/*
-                    Nome, email, cpf ou cnpj, endereço, referencia
-                    cep, bairro, cidade, estado, tel recidencial, celular, contribuição, carnê 
-                */}
-                <Container>
-                    <Form />
-                </Container>
+                <Form />
             </Box>
 
         </Wrapper>

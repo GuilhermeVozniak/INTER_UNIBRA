@@ -1,5 +1,5 @@
 //MUI
-import { FormControl, Button, Grid, TextField, InputLabel } from '@mui/material'
+import { Button, TextField, Box } from '@mui/material'
 
 export const Form = () => {
     const styleCenter = {
@@ -9,91 +9,37 @@ export const Form = () => {
 
     return (
         <>
-            <Grid
-                spancing={6} gap={2} container
-                sx={{
-                    display: "flex",
-                    justifyContent: 'center'
-                }}
-            >
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="name" label="Nome" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="email" label="E-mail" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="cpf" label="CPF ou CNPJ" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="address" label="Endereço" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="reference" label="Referência" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="cep" label="Cep" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="bairro" label="Bairro" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="cidade" label="Cidade" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="estado" label="Estado" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="telresidencial" label="Tel Residencial" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="celular" label="Celular" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="contribuicao" label="Contribuição" variant="filled" />
-                    </FormControl>
-                </Grid>
-                <Grid item xs={12} sm={12} md={3} sx={styleCenter}>
-                    <FormControl>
-                        <TextField id="carne" label="Carnê" variant="filled" />
-                    </FormControl>
-                </Grid>
-            </Grid>
-            <Grid
-                sx={{
-                    mt: 4,
-                    gap: 3,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                }}
-            >
-                <Button variant="contained">Enviar</Button>
-                <Button variant="contained">Limpar</Button>
-            </Grid>
+            <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+                <Box sx={{ mt: 4, width: { xs: "100%", sm: "100%", md: "35%", lg: "23%", xl: "27%" }, display: "flex", flexDirection: "column", alingItems: "center" }}>
+                    <TextField variant="filled" placeholder="Nome" fullWidth size="small" />
+                    <TextField variant="filled" placeholder="E-mail" fullWidth />
+                    <TextField variant="filled" placeholder="CPF ou CNPJ" fullWidth />
+                    <TextField variant="filled" placeholder="Endereço" fullWidth />
+                    <TextField variant="filled" placeholder="Referencia" fullWidth />
+                    <Box sx={{ mt: { xs: 0, sm: 0, md: 0, lg: 0, xl: 2 } }} />
+                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                        <TextField fullwidth variant="filled" placeholder="Cep" />
+                        <TextField fullwidth variant="filled" placeholder="Bairro" />
+                    </Box>
+                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                        <TextField fullwidth variant="filled" placeholder="Cidade" />
+                        <TextField fullwidth variant="filled" placeholder="Estado" />
+                    </Box>
+                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                        <TextField fullwidth variant="filled" placeholder="Tel Residencial" />
+                        <TextField fullwidth variant="filled" placeholder="Celular" />
+                    </Box>
+                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                        <TextField fullwidth variant="filled" placeholder="Contribuicão" />
+                        <TextField fullwidth variant="filled" placeholder="Carnê" />
+                    </Box>
+
+                    <Box sx={{ mt: 2, display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                        <Button variant="contained">Enviar</Button>
+                        <Button variant="contained">Limpar</Button>
+                    </Box>
+                </Box>
+            </Box>
         </>
     )
 }
