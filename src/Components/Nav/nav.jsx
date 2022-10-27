@@ -7,6 +7,9 @@ import { AppBar, Toolbar, Container } from "@mui/material"
 import { Mobile } from './mobile/mobile'
 import { Desktop } from './desktop/desktop'
 
+//any
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
+
 
 
 const pages = ['Institucional', 'Estrutura', 'Eventos', 'Ajuda', 'Contato']

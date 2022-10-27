@@ -45,7 +45,9 @@ export const Estrutura = () => {
 
 	return (
 		<Wrapper>
+
 			<BreadCrumbs pages={["Estrutura"]} />
+
 			<Box sx={{ mt: 2 }} />
 			<Grid spacing={6} container sx={{ mb: 2, display: "flex", justifyContent: "space-evenly" }} >
 

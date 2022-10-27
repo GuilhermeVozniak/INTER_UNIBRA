@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 //MUI
 import { Box, Typography, Button } from "@mui/material"
+import CameraAltIcon from '@mui/icons-material/CameraAlt'
 
 //Components
 import { Switching } from '../Switching'
@@ -41,6 +42,13 @@ export const Desktop = ({ ...props }) => {
                         </Button>
                     </Link>
                 ))}
+            </Box>
+
+            <Box>
+                <input id="camera" type="file" accept="image/*" capture='environment' style={{ display: "none" }} />
+                <label for="camera">
+                    <CameraAltIcon sx={{ mr: 2 }} />
+                </label>
             </Box>
 
 
