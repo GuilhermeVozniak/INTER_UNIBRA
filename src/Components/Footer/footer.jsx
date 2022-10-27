@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Box, Button, Grid, Typography, Divider } from "@mui/material"
+import { Box, Button, Grid, Typography, Divider, Link as Redirect } from "@mui/material"
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
@@ -73,8 +73,18 @@ export const Footer = () => {
             <Typography variant="h6" sx={{ p: 0.5, fontWeight: 'bold' }}>Redes Sociais</Typography>
             <Divider sx={{ mb: 1, borderBottomWidth: 2 }} />
             <Box sx={{ width: "100%", display: "flex", justifyContent: { xs: "left", sm: "left", md: "center" } }}>
-              <InstagramIcon sx={{ p: 0.5 }} fontSize="large" />
-              <FacebookIcon sx={{ p: 0.5 }} fontSize="large" />
+
+              <Redirect
+                href="https://www.instagram.com/assobecer/"
+                sx={{ color: "primary.contrastText", textDecoration: "none" }}>
+                <InstagramIcon sx={{ p: 0.5 }} fontSize="large" />
+              </Redirect>
+
+              <Redirect
+                href="https://www.facebook.com/profile.php?id=100066650885241"
+                sx={{ color: "primary.contrastText", textDecoration: "none" }}>
+                <FacebookIcon sx={{ p: 0.5 }} fontSize="large" />
+              </Redirect>
             </Box>
           </Grid>
 
