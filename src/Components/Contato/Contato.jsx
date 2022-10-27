@@ -1,13 +1,19 @@
 import { Button, Box, TextField, Typography } from "@mui/material"
 
+//Components
+import { BreadCrumbs } from '../BreadCrumbs/BreadCrimbs'
+
 
 
 export const Contato = () => {
 
     return (
         <>
-            <Typography variant="h3">Contato</Typography>
-            <Typography variant="body1" sx={{ mt: 2 }}>Preencha o formulário abaixo e entre em contato conosco, use o mesmo para se tornar um voluntário:</Typography>
+            <BreadCrumbs pages={["Contato"]} className="crumbs" />
+
+            <Typography variant="h4" sx={{ mt: 4, width: "100%", textAlign: "center" }}>CONTATO</Typography>
+
+            <Typography variant="body1" sx={{ mt: 2, width: "100%", textAlign: "center" }}>Preencha o formulário abaixo e entre em contato conosco: </Typography>
 
             <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
                 <Box sx={{ mt: 4, width: { xs: "100%", sm: "100%", md: "35%", lg: "23%", xl: "27%" }, display: "flex", flexDirection: "column", alingItems: "center" }}>

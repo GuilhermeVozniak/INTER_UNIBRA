@@ -1,3 +1,4 @@
+import { useState } from "react"
 import {
   BrowserRouter,
   Routes,
@@ -18,17 +19,27 @@ import { Contato } from "./Components/Contato/Contato"
 
 //Theme
 import { ThemeProvider } from "@mui/material"
-import { theme } from "./theme"
+import { theme, themeDark } from "./theme"
 
 //MUI
 import { Box } from "@mui/material"
+import { useEffect } from "react"
 
 function App() {
+
+  //theme
+  const [onUseTheme, setOnUseTheme] = useState(theme)
+  const [darkMode, setDarkMode] = useState(false)
+
+  useEffect(() => {
+    darkMode ? setOnUseTheme(themeDark) : setOnUseTheme(theme)
+  }, [darkMode])
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={onUseTheme}>
       <BrowserRouter>
 
-        <NavegationBar />
+        <NavegationBar darkMode={darkMode} setDarkMode={setDarkMode} />
 
         <Box sx={{
           backgroundColor: "secondary.main",

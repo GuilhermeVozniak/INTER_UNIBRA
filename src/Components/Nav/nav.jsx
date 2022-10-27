@@ -7,10 +7,13 @@ import { AppBar, Toolbar, Container } from "@mui/material"
 import { Mobile } from './mobile/mobile'
 import { Desktop } from './desktop/desktop'
 
-const pages = ['Institucional', 'Estrutura', 'Eventos', 'Ajuda', 'Contato']
-const settings = ['Modo Noturno', 'Inversão de Cores', 'Tamanho dos itens']
 
-export const NavegationBar = () => {
+
+const pages = ['Institucional', 'Estrutura', 'Eventos', 'Ajuda', 'Contato']
+
+export const NavegationBar = (props) => {
+   /*  const { darkMode, setDarkMode } = props */
+
     const [anchorElNav, setAnchorElNav] = useState(null)
     const [anchorElUser, setAnchorElUser] = useState(null)
 
@@ -44,7 +47,8 @@ export const NavegationBar = () => {
                     />
 
                     <Desktop
-                        settings={settings}
+                        darkMode={props.darkMode}
+                        setDarkMode={props.setDarkMode}
                         pages={pages}
                         handleOpenNavMenu={handleOpenNavMenu}
                         anchorElNav={anchorElNav}
@@ -53,6 +57,8 @@ export const NavegationBar = () => {
                         handleOpenUserMenu={handleOpenUserMenu}
                         handleCloseUserMenu={handleCloseUserMenu}
                     />
+
+
 
                 </Toolbar>
             </Container>

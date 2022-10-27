@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom"
 
 //MUI
-import { Box, IconButton, Typography, Menu, Button, Tooltip, MenuItem } from "@mui/material"
-import SettingsIcon from '@mui/icons-material/Settings'
+import { Box, Typography, Button } from "@mui/material"
+
+//Components
+import { Switching } from '../Switching'
 
 export const Desktop = ({ ...props }) => {
+
     return (
         <>
             <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
@@ -40,35 +43,8 @@ export const Desktop = ({ ...props }) => {
                 ))}
             </Box>
 
-            <Box sx={{ flexGrow: 0 }}>
-                <Tooltip title="Configurações">
-                    <IconButton onClick={props.handleOpenUserMenu} sx={{ p: 0 }}>
-                        <SettingsIcon sx={{ color: "common.white" }} />
-                    </IconButton>
-                </Tooltip>
-                <Menu
-                    sx={{ mt: '45px' }}
-                    id="Menu"
-                    anchorEl={props.anchorElUser}
-                    anchorOrigin={{
-                        vertical: 'top',
-                        horizontal: 'right',
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                        vertical: 'top',
-                        horizontal: 'right',
-                    }}
-                    open={Boolean(props.anchorElUser)}
-                    onClose={props.handleCloseUserMenu}
-                >
-                    {props.settings.map((setting) => (
-                        <MenuItem key={setting} onClick={props.handleCloseUserMenu}>
-                            <Typography textAlign="center">{setting}</Typography>
-                        </MenuItem>
-                    ))}
-                </Menu>
-            </Box>
+
+            <Switching darkMode={props.darkMode} setDarkMode={props.setDarkMode} />
 
         </>
     )

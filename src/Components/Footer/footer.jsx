@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom"
 import { Box, Button, Grid, Typography, Divider } from "@mui/material"
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import MyLocationIcon from '@mui/icons-material/MyLocation'
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
 
 
 export const Footer = () => {
@@ -80,18 +81,20 @@ export const Footer = () => {
         </Grid>
 
         <Grid item sx={{ mt: 2 }}>
-          <Button
-            variant="contained"
-            fullWidth
-            sx={{
-              mt: 2,
-              bgcolor: "primary.dark",
-              color: "common.white",
-              boxShadow: 8,
-            }}
-          >
-            Faca sua doação
-          </Button>
+          <Link to={"ajuda"} style={{ textDecoration: "none" }}>
+            <Button
+              variant="contained"
+              fullWidth
+              sx={{
+                mt: 2,
+                bgcolor: "secondary.main",
+                color: "primary.contrastText",
+                boxShadow: 8,
+              }}
+            >
+              Faca sua doação
+            </Button>
+          </Link>
         </Grid>
 
       </Grid>
